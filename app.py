@@ -12,7 +12,6 @@ app = FastAPI()
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
-# Global storage (simple version)
 index = None
 chunks = None
 
@@ -25,12 +24,10 @@ class ChatRequest(BaseModel):
 async def upload_pdf(file: UploadFile = File(...)):
     global index, chunks
 
-    # Save uploaded file temporarily
     with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
         tmp.write(await file.read())
         tmp_path = tmp.name
 
-    # Process PDF
     pdf_text = load_pdf(tmp_path)
     chunks = chunk_text(pdf_text)
     index, _ = build_faiss_index(chunks)
