@@ -18,3 +18,8 @@ An intelligent PDF question-answering system built with FastAPI and Streamlit.
 ## Architecture
 
 User → Upload PDF → Chunking → Vector Search → GPT → Answer
+
+## Demo
+![Upload](assets/demo1.png)
+![Chat](assets/demo2.png)
+![Response](assets/demo3.png)
