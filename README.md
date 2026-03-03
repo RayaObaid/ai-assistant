@@ -1,4 +1,4 @@
-# AI PDF Assistant
+# AI PDF Assistant - Chatbot
 
 An intelligent PDF question-answering system built with FastAPI and Streamlit.
 
