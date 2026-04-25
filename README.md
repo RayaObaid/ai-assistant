@@ -1,6 +1,6 @@
-# AI PDF Assistant - Chatbot
+# AI PDF Assistant - Chatbot / 2026
 
-An intelligent PDF question-answering system built with FastAPI and Streamlit.
+An intelligent PDF question-answering system built with FastAPI and Streamlit. 
 
 ## Features
 - Upload any PDF
